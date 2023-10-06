@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="algorithm.ts"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body class="d-flex flex-column gap-50">
+    <div class="main-container">
+      <div class="heading text-center">
+        <h2>CRICKET GAME</h2>
+      </div>
+      <div class="d-flex justify-content-evenly text-center ">
+        
+        <div>
+          <p>TEAM 1</p>
+          <p class="team-one">0</p>
+          <button class="btn btn-primary button-one ">HIT</button>
+        </div>
+        <div class="d-flex flex-column gap-50">
+          <p>TIMER</p>
+          <p class="timer">0</p>
+          <button class="btn btn-outline-secondary reset-button  btn-sm">RESET</button>
+          <button class="btn btn-outline-success  btn-sm generate-result-button">
+            GENERATE RESULT
+          </button>
+          <p class="results">----</p>
+        </div>
+        <div>
+          <p>TEAM 2</p>
+          <p class="team-two">0</p>
+          <button class="btn btn-primary button-two">HIT</button>
+        </div>
+      </div>
+      <div>
+        <h2></h2>
+      </div>
+      <div class="d-flex justify-content-around">
+        <div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="dimension fs-10" scope="col">Team 1</th>
+
+                <th class="dimension fs-10" scope="col">1</th>
+
+                <th class="dimension fs-10" scope="col">2</th>
+
+                <th class="dimension fs-10" scope="col">3</th>
+
+                <th class="dimension fs-10" scope="col">4</th>
+
+                <th class="dimension fs-10" scope="col">5</th>
+
+                <th class="dimension fs-10" scope="col">6</th>
+
+                <th class="dimension fs-10" scope="col">Total</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <th class="dimension fs-10" scope="row">Player 1</th>
+
+                <td class="dimension t11p1"></td>
+
+                <td class="dimension t12p1"></td>
+
+                <td class="dimension t13p1"></td>
+
+                <td class="dimension t14p1"></td>
+
+                <td class="dimension t15p1"></td>
+
+                <td class="dimension t16p1"></td>
+
+                <td class="dimension t1totalp1"></td>
+              </tr>
+
+              <tr>
+                <th class="dimension fs-10" scope="row">Player 2</th>
+
+                <td class="dimension t11p2"></td>
+
+                <td class="dimension t12p2"></td>
+
+                <td class="dimension t13p2"></td>
+
+                <td class="dimension t14p2"></td>
+
+                <td class="dimension t15p2"></td>
+
+                <td class="dimension t16p2"></td>
+
+                <td class="dimension t1totalp2"></td>
+              </tr>
+
+              <tr>
+                <th class="dimension fs-10" scope="row">Player 3</th>
+
+                <td class="dimension t11p3"></td>
+
+                <td class="dimension t12p3"></td>
+
+                <td class="dimension t13p3"></td>
+
+                <td class="dimension t14p3"></td>
+
+                <td class="dimension t15p3"></td>
+
+                <td class="dimension t16p3"></td>
+
+                <td class="dimension t1totalp3"></td>
+              </tr>
+
+              <tr>
+                <th class="dimension fs-10" scope="row">Player 4</th>
+
+                <td class="dimension t11p4"></td>
+
+                <td class="dimension t12p4"></td>
+
+                <td class="dimension t13p4"></td>
+
+                <td class="dimension t14p4"></td>
+
+                <td class="dimension t15p4"></td>
+
+                <td class="dimension t16p4"></td>
+
+                <td class="dimension t1totalp4"></td>
+              </tr>
+
+              <tr>
+                <th class="dimension fs-10" scope="row">Player 5</th>
+
+                <td class="dimension t11p5"></td>
+
+                <td class="dimension t12p5"></td>
+
+                <td class="dimension t13p5"></td>
+
+                <td class="dimension t14p5"></td>
+
+                <td class="dimension t15p5"></td>
+
+                <td class="dimension t16p5"></td>
+
+                <td class="dimension t1totalp5"></td>
+              </tr>
+
+              <tr>
+                <th class="dimension fs-10" scope="row">Player 6</th>
+
+                <td class="dimension t11p6"></td>
+
+                <td class="dimension t12p6"></td>
+
+                <td class="dimension t13p6"></td>
+
+                <td class="dimension t14p6"></td>
+
+                <td class="dimension t15p6"></td>
+
+                <td class="dimension t16p6"></td>
+
+                <td class="dimension t1totalp6"></td>
+              </tr>
+
+              <tr>
+                <th class="dimension fs-10" scope="row">Player 7</th>
+
+                <td class="dimension t11p7"></td>
+
+                <td class="dimension t12p7"></td>
+
+                <td class="dimension t13p7"></td>
+
+                <td class="dimension t14p7"></td>
+
+                <td class="dimension t15p7"></td>
+
+                <td class="dimension t16p7"></td>
+
+                <td class="dimension t1totalp7"></td>
+              </tr>
+
+              <tr>
+                <th class="dimension fs-10" scope="row">Player 8</th>
+
+                <td class="dimension t11p8"></td>
+
+                <td class="dimension t12p8"></td>
+
+                <td class="dimension t13p8"></td>
+
+                <td class="dimension t14p8"></td>
+
+                <td class="dimension t15p8"></td>
+
+                <td class="dimension t16p8"></td>
+
+                <td class="dimension t1totalp8"></td>
+              </tr>
+
+              <tr>
+                <th class="dimension fs-10" scope="row">Player 9</th>
+
+                <td class="dimension t11p9"></td>
+
+                <td class="dimension t12p9"></td>
+
+                <td class="dimension t13p9"></td>
+
+                <td class="dimension t14p9"></td>
+
+                <td class="dimension t15p9"></td>
+
+                <td class="dimension t16p9"></td>
+
+                <td class="dimension t1totalp9"></td>
+              </tr>
+
+              <tr>
+                <th class="dimension fs-10" scope="row">Player 10</th>
+
+                <td class="dimension t11p10"></td>
+
+                <td class="dimension t12p10"></td>
+
+                <td class="dimension t13p10"></td>
+
+                <td class="dimension t14p10"></td>
+
+                <td class="dimension t15p10"></td>
+
+                <td class="dimension t16p10"></td>
+
+                <td class="dimension t1totalp10"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="dimension fs-10" scope="col">Team 2</th>
+
+                <th class="dimension fs-10" scope="col">1</th>
+
+                <th class="dimension fs-10" scope="col">2</th>
+
+                <th class="dimension fs-10" scope="col">3</th>
+
+                <th class="dimension fs-10" scope="col">4</th>
+
+                <th class="dimension fs-10" scope="col">5</th>
+
+                <th class="dimension fs-10" scope="col">6</th>
+
+                <th class="dimension fs-10" scope="col">Total</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <th class="dimension fs-10" scope="row">Player 1</th>
+
+                <td class="dimension t21p1"></td>
+
+                <td class="dimension t22p1"></td>
+
+                <td class="dimension t23p1"></td>
+
+                <td class="dimension t24p1"></td>
+
+                <td class="dimension t25p1"></td>
+
+                <td class="dimension t26p1"></td>
+
+                <td class="dimension t2totalp1"></td>
+              </tr>
+
+              <tr>
+                <th class="dimension fs-10" scope="row">Player 2</th>
+
+                <td class="dimension t21p2"></td>
+
+                <td class="dimension t22p2"></td>
+
+                <td class="dimension t23p2"></td>
+
+                <td class="dimension t24p2"></td>
+
+                <td class="dimension t25p2"></td>
+
+                <td class="dimension t26p2"></td>
+
+                <td class="dimension t2totalp2"></td>
+              </tr>
+
+              <tr>
+                <th class="dimension fs-10" scope="row">Player 3</th>
+
+                <td class="dimension t21p3"></td>
+
+                <td class="dimension t22p3"></td>
+
+                <td class="dimension t23p3"></td>
+
+                <td class="dimension t24p3"></td>
+
+                <td class="dimension t25p3"></td>
+
+                <td class="dimension t26p3"></td>
+
+                <td class="dimension t2totalp3"></td>
+              </tr>
+
+              <tr>
+                <th class="dimension fs-10" scope="row">Player 4</th>
+
+                <td class="dimension t21p4"></td>
+
+                <td class="dimension t22p4"></td>
+
+                <td class="dimension t23p4"></td>
+
+                <td class="dimension t24p4"></td>
+
+                <td class="dimension t25p4"></td>
+
+                <td class="dimension t26p4"></td>
+
+                <td class="dimension t2totalp4"></td>
+              </tr>
+
+              <tr>
+                <th class="dimension fs-10" scope="row">Player 5</th>
+
+                <td class="dimension t21p5"></td>
+
+                <td class="dimension t22p5"></td>
+
+                <td class="dimension t23p5"></td>
+
+                <td class="dimension t24p5"></td>
+
+                <td class="dimension t25p5"></td>
+
+                <td class="dimension t26p5"></td>
+
+                <td class="dimension t2totalp5"></td>
+              </tr>
+
+              <tr>
+                <th class="dimension fs-10" scope="row">Player 6</th>
+
+                <td class="dimension t21p6"></td>
+
+                <td class="dimension t22p6"></td>
+
+                <td class="dimension t23p6"></td>
+
+                <td class="dimension t24p6"></td>
+
+                <td class="dimension t25p6"></td>
+
+                <td class="dimension t26p6"></td>
+
+                <td class="dimension t2totalp6"></td>
+              </tr>
+
+              <tr>
+                <th class="dimension fs-10" scope="row">Player 7</th>
+
+                <td class="dimension t21p7"></td>
+
+                <td class="dimension t22p7"></td>
+
+                <td class="dimension t23p7"></td>
+
+                <td class="dimension t24p7"></td>
+
+                <td class="dimension t25p7"></td>
+
+                <td class="dimension t26p7"></td>
+
+                <td class="dimension t2totalp7"></td>
+              </tr>
+
+              <tr>
+                <th class="dimension fs-10" scope="row">Player 8</th>
+
+                <td class="dimension t21p8"></td>
+
+                <td class="dimension t22p8"></td>
+
+                <td class="dimension t23p8"></td>
+
+                <td class="dimension t24p8"></td>
+
+                <td class="dimension t25p8"></td>
+
+                <td class="dimension t26p8"></td>
+
+                <td class="dimension t2totalp8"></td>
+              </tr>
+
+              <tr>
+                <th class="dimension fs-10" scope="row">Player 9</th>
+
+                <td class="dimension t21p9"></td>
+
+                <td class="dimension t22p9"></td>
+
+                <td class="dimension t23p9"></td>
+
+                <td class="dimension t24p9"></td>
+
+                <td class="dimension t25p9"></td>
+
+                <td class="dimension t26p9"></td>
+
+                <td class="dimension t2totalp9"></td>
+              </tr>
+
+              <tr>
+                <th class="dimension fs-10" scope="row">Player 10</th>
+
+                <td class="dimension t21p10"></td>
+
+                <td class="dimension t22p10"></td>
+
+                <td class="dimension t23p10"></td>
+
+                <td class="dimension t24p10"></td>
+
+                <td class="dimension t25p10"></td>
+
+                <td class="dimension t26p10"></td>
+
+                <td class="dimension t2totalp10"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="algorithm.js"></script>
+  </body>
+</html>
